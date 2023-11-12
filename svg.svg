@@ -17,9 +17,6 @@
             </style>
 
             <h1>HELLO WORLD! work in progress :D</h1>
-            <audio controls id="music" >
-                <source src="https://github.com/VincentVaxelaire/VincentVaxelaire/blob/main/test.mp3" type="audio/mp3">
-            </audio>
         </div>
     </foreignObject>
 </svg>
