@@ -2,21 +2,51 @@
     <foreignObject width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml">
             <style>
+                :root {
+                    --color-main: red;
+                    --color-primary: yellow;
+                }
+                .container {
+                    display: flex;
+                    width: 100%;
+                    height: 300px;
+                    background-color: transparent;
+                }
+
                 h1 {
-                    color: red;
+                    color: var(--color-main);
                     animation: mymove 2s infinite;
                 }
+
                 @keyframes mymove {
-                    from {
-                        color: red;
+                    0% {
+                        color: var(--color-main);
                     }
-                    to {
-                        color: yellow;
+                    50% {
+                        color: var(--color-primary);
+                    }
+                    100% {
+                        color: var(--color-main);
+                    }
+                }
+
+                @media (prefers-color-scheme: light) {
+                    h1 {
+                        --color-main: blue;
+                        --color-primary: brown;
+                    }
+                }
+
+                @media (prefers-reduced-motion) {
+                    .hi {
+                        animation: none;
                     }
                 }
             </style>
 
-            <h1>HELLO WORLD! work in progress :D</h1>
+            <div class="container">
+                <h1>HELLO WORLD! work in progress :D</h1>
+            </div>
         </div>
     </foreignObject>
 </svg>
