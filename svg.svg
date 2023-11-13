@@ -18,6 +18,14 @@
                     animation: mymove 2s infinite;
                 }
 
+                p {
+                    color: var(--color-main)
+                }
+
+                p::hover {
+                    color: var(--color-primary);
+                }
+
                 @keyframes mymove {
                     0% {
                         color: var(--color-main);
@@ -46,6 +54,7 @@
 
             <div class="container">
                 <h1>HELLO WORLD! work in progress :D</h1>
+                <p>test hover ?</p>
             </div>
         </div>
     </foreignObject>
